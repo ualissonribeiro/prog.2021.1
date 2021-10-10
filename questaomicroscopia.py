@@ -1,24 +1,22 @@
 #a.	Crie as variáveis necessárias para que o programa funcione corretamente.
 #b.	Inicialize as variáveis com valores padrão adequados.
 
-resolucaoDaImagemDesejada = ""
-tipoDeCelulaASerEscaneada = ""
-faixaDeIluminacaoNecessaria = ""
-intensidadeDosLasers = ""
-ganho = ""
-offset = ""
-formatoDaImagem = ""
-zoomFactor = ""
-pixelSize = ""
-velocidadeDaVarredura = ""
+resolucaoDaImagemDesejada = "30x45"
+tipoDeCelulaASerEscaneada = " basofila"
+faixaDeIluminacaoNecessaria = "5"
+intensidadeDosLasers = "4"
+ganho = "30 x40"
+offset = " 50"
+formatoDaImagem = "retrato"
+zoomFactor = "4x"
+pixelSize = "44"
+velocidadeDaVarredura = "3"
 
-entradaDigitada = ""
 
 #c.	Crie uma pequena mensagem de apresentação do programa para realizar
 #uma interface com o usuário. Ex.: “Esse programa tem como objetivo receber dados para ...”
 
-print("Esse programa tem como objetivo receber dados para configuração de um ")
-print("microscópio confocal: ")
+print("Esse programa tem como objetivo receber dados para configuração de um microscópio confocal")
 print("") #print para salto de linha
 print("") #print para salto de linha
 print("") #print para salto de linha
@@ -119,6 +117,17 @@ print("Velocidade da varredura: ",velocidadeDaVarredura)
 #g.	Após setada as configurações iniciais o usuário deve utilizar dois caracteres para a
 # calibração do equipamento no sentido horizontal. Para isso, ele deve apertar a tecla
 # correspondente à primeira letra do seu nome 10x e à última letra do seu nome 10x.
+#para calibração e continuar processo apertar 10x a tecla u e 10 vezes a tecla z
+
+u = input('digite a tecla u')
+
+if u == 'u':
+    print("foi corretamente digitado u")    
+else:
+    print("não foi corretamente digitada a letra desejada ")
+
+input("digite a tecla z 10 vezes e aperte enter")
+
 
 
 #h.	Imediatamente após apertar a tecla o programa deve apresentar na tela que a informação
